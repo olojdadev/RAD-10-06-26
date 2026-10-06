@@ -1,0 +1,39 @@
+import java.util.*;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+
+      Scanner scanner = new Scanner(System.in);
+      
+      //userName
+      System.out.print("Enter your name: ");
+      String userName = scanner.nextLine();
+
+      //userAge
+      System.out.print("Enter your age: ");
+      int userAge = scanner.nextInt();
+      scanner.nextLine();
+
+      //userAddress
+      System.out.print("Enter your address: ");
+      String userAddress = scanner.nextLine();
+
+      //userWeight
+      System.out.print("Enter your weight: ");
+      double userWeight = scanner.nextDouble();
+      String userWeight2 = f("%.2f", userWeight);
+      scanner.nextLine();
+
+      //userHeight
+      System.out.print("Enter your height: ");
+      double userHeight = scanner.nextDouble();
+      String userHeight2 = f("%.2f", userHeight);
+      scanner.nextLine();
+
+      System.out.printf("\nHello " + userName + ", your age is currently " + userAge + ". You are from " + userAddress + ". your Weight is: " + userWeight2 + "kg, and your Height is: " + userHeight2 + "m");
+
+      scanner.close();
+
+    }
+}
